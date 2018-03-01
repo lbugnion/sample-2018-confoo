@@ -251,3 +251,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/Azure101/HelloXamarin/packages/
+/Azure101/MvcWebApp/packages
