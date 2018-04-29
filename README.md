@@ -8,7 +8,7 @@ My code samples for the Confoo 2018 conference in Montreal, Canada
 
 You can see the details and the slides here:
 
-http://galasoft.ch/presentations/presentationdetails.cshtml?name=2018013
+http://galasoft.ch/presentations/2018013
 
 ## Content
 
@@ -30,7 +30,3 @@ Shows a sample with observable lists for iOS.
 
 A complete MVVM Light sample app for Xamarin.iOS, Xamarin.Android, Windows 10, Xamarin.Forms and more.
 Available at https://github.com/lbugnion/sample-crossplatform-flowers
-
-# Azure 101
-
-TO BE DONE
