@@ -1,8 +1,8 @@
-using HelloAndroid.ViewModel;
+﻿using Data.ViewModel;
 
 namespace HelloAndroid
 {
-    public class App
+    public static class App
     {
         private static ViewModelLocator _locator;
 

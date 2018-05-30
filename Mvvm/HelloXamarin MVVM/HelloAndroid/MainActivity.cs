@@ -1,17 +1,17 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using GalaSoft.MvvmLight.Helpers;
 using System.Collections.Generic;
+using GalaSoft.MvvmLight.Helpers;
 
 namespace HelloAndroid
 {
-    [Activity(Label = "HelloAndroid", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "HelloAndroid1", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        private List<Binding> _bindings = new List<Binding>();
         private Button _button;
         private TextView _text;
+        private List<Binding> _bindings = new List<Binding>();
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -21,7 +21,7 @@ namespace HelloAndroid
             SetContentView (Resource.Layout.Main);
 
             _button = FindViewById<Button>(Resource.Id.MyButton);
-            _text = FindViewById<TextView>(Resource.Id.MyTextView);
+            _text = FindViewById<TextView>(Resource.Id.MyText);
 
             _bindings.Add(
                 this.SetBinding(

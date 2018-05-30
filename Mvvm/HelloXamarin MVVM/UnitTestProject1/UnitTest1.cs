@@ -1,4 +1,4 @@
-﻿using HelloAndroid.ViewModel;
+﻿using Data.ViewModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestProject1

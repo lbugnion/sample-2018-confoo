@@ -1,19 +1,12 @@
-using Data;
+﻿using Data.Model;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using System;
 
-namespace HelloAndroid.ViewModel
+namespace Data.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
-        private IYoutubeService _service;
-
-        public MainViewModel(IYoutubeService service)
-        {
-            _service = service;
-        }
-
         private string _result = "Nothing yet";
 
         public string Result
@@ -29,6 +22,7 @@ namespace HelloAndroid.ViewModel
         }
 
         private RelayCommand _refreshCommand;
+        private IYoutubeService _service;
 
         public RelayCommand RefreshCommand
         {
@@ -49,6 +43,11 @@ namespace HelloAndroid.ViewModel
                         }
                     }));
             }
+        }
+
+        public MainViewModel(IYoutubeService service)
+        {
+            _service = service;
         }
     }
 }

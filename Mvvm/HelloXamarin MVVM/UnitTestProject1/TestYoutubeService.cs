@@ -1,5 +1,5 @@
-﻿using System;
-using Data;
+﻿using Data.Model;
+using System;
 using System.Threading.Tasks;
 
 namespace UnitTestProject1
@@ -13,6 +13,7 @@ namespace UnitTestProject1
         public Task<string> Refresh()
         {
             var tcs = new TaskCompletionSource<string>();
+
             if (_forceError)
             {
                 tcs.SetException(new Exception(ExceptionMessage));
@@ -21,6 +22,7 @@ namespace UnitTestProject1
             {
                 tcs.SetResult(ResultPassed);
             }
+
             return tcs.Task;
         }
 
@@ -28,6 +30,5 @@ namespace UnitTestProject1
         {
             _forceError = forceError;
         }
-
     }
 }

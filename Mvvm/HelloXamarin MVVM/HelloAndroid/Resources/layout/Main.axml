@@ -12,8 +12,8 @@
         android:text="Nothing yet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/MyTextView"
-        android:layout_marginTop="10dp"
+        android:id="@+id/MyText"
         android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:textSize="32dp" />
 </LinearLayout>

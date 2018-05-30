@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Data
+namespace Data.Model
 {
     public interface IYoutubeService
     {

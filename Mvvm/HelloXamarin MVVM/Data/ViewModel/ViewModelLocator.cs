@@ -1,15 +1,12 @@
-using Data;
+using Data.Model;
 using GalaSoft.MvvmLight.Ioc;
-using Microsoft.Practices.ServiceLocation;
 
-namespace HelloAndroid.ViewModel
+namespace Data.ViewModel
 {
     public class ViewModelLocator
     {
-        public ViewModelLocator()
+        static ViewModelLocator()
         {
-            ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-
             SimpleIoc.Default.Register<IYoutubeService, YoutubeService>();
             SimpleIoc.Default.Register<MainViewModel>();
         }
@@ -18,7 +15,7 @@ namespace HelloAndroid.ViewModel
         {
             get
             {
-                return ServiceLocator.Current.GetInstance<MainViewModel>();
+                return SimpleIoc.Default.GetInstance<MainViewModel>();
             }
         }
     }

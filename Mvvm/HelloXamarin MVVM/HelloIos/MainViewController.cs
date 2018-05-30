@@ -1,15 +1,17 @@
-﻿using GalaSoft.MvvmLight.Helpers;
+﻿using Foundation;
+using GalaSoft.MvvmLight.Helpers;
+using HelloIos;
 using System;
 using System.Collections.Generic;
 using UIKit;
 
-namespace HelloIos
+namespace Blank
 {
-    public partial class ViewController : UIViewController
+    public partial class MainViewController : UIViewController
     {
         private List<Binding> _bindings = new List<Binding>();
 
-        public ViewController(IntPtr handle) : base(handle)
+        public MainViewController (IntPtr handle) : base (handle)
         {
         }
 

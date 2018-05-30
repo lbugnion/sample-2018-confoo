@@ -64,7 +64,7 @@ namespace HelloAndroid
 			public const int MyButton = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int MyTextView = 2131034113;
+			public const int MyText = 2131034113;
 			
 			static Id()
 			{
